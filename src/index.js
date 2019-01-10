@@ -10,8 +10,10 @@ class Quote extends React.Component {
 		return(
 			<div id='quotePart'>
 				<div id="text">
+					{this.props.currentQuote}
 				</div>
 				<div id="author">
+					{this.props.currentAuthor}
 				</div>
 			</div>
 		)
@@ -39,20 +41,37 @@ class QuoteBox extends React.Component {
 			{
 				author:'4ss',
 				quote:'4xxxxxxxxxxx'	
+			},
+			{
+				author:'5ss',
+				quote:'5xxxxxxxxxxx'	
+			},
+			{
+				author:'6ss',
+				quote:'6xxxxxxxxxxx'	
+			},
+			{
+				author:'7ss',
+				quote:'7xxxxxxxxxxx'	
+			},
+			{
+				author:'8ss',
+				quote:'8xxxxxxxxxxx'	
 			}]
 			
 		}
+		this.randomQuote = this.randomQuote.bind(this);
 	}
 	randomQuote() {
-		let randomQuoteIndex = Math.floor(Math.random() * 4);
+		let randomQuoteIndex = Math.floor(Math.random() * 8);
 
 		console.log(randomQuoteIndex);
 		console.log(this.state.quoteData[randomQuoteIndex].quote);
 		console.log(this.state.quoteData[randomQuoteIndex].author);
-		/*this.setState({
+		this.setState({
 			currentQuote:this.state.quoteData[randomQuoteIndex].quote,
 			currentAuthor:this.state.quoteData[randomQuoteIndex].author
-		})*/
+		})
 	}
 	render() {
 		return(
