@@ -21,18 +21,30 @@ body {
   flex-direction: column; }
   #quote-box #quotePart {
     display: flex;
-    background: blue; }
+    flex-direction: column;
+    background: blue;
+    height: 70%; }
+    #quote-box #quotePart #text {
+      height: 70%;
+      background: olive; }
+    #quote-box #quotePart #author {
+      height: 30%; }
   #quote-box #buttons {
-    display: flex; }
+    display: flex;
+    height: 30%; }
     #quote-box #buttons #tweet-quote {
-      background: red;
-      padding: 15px;
+      background: green;
       color: white;
-      width: fit-content; }
+      width: 50%; }
     #quote-box #buttons #new-quote {
-      background: red;
-      padding: 15px;
+      background: olive;
       color: white;
-      width: fit-content; }
+      width: 50%; }
+
+.button {
+  background: black;
+  width: fit-content;
+  padding: 20px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */

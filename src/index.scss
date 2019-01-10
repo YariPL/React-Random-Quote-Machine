@@ -21,21 +21,43 @@ body {
 	flex-direction:column;
 	#quotePart {
 		display:flex;
+		flex-direction:column;
 		background:blue;	
+		height:70%;
+		#text {
+			height:70%;
+			background:olive;
+		}
+		#author {
+			height:30%;
+
+		}
 	}
 	#buttons {
 		display:flex;
+		height:30%;
+
 		#tweet-quote {
-			background:red;
-			padding:15px;
+			background:green;
 			color:white;
-			width:fit-content;
+			width:50%;
+
 		}
 		#new-quote {
-			background:red;
-			padding:15px;
+			background:olive;
 			color:white;
-			width:fit-content;
+			width:50%;
+
 		}
 	}
+}
+.button {
+	background:black;
+	width:fit-content;
+	padding:20px;
+//	position:absolute;
+//	bottom:10%;
+//	left:50%;
+//	transform:translate(-50%,-50%);
+	cursor:pointer;
 }
