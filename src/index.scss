@@ -17,4 +17,25 @@ body {
 	width:600px;
 	height:350px;
 	background:wheat;
+	display:flex;
+	flex-direction:column;
+	#quotePart {
+		display:flex;
+		background:blue;	
+	}
+	#buttons {
+		display:flex;
+		#tweet-quote {
+			background:red;
+			padding:15px;
+			color:white;
+			width:fit-content;
+		}
+		#new-quote {
+			background:red;
+			padding:15px;
+			color:white;
+			width:fit-content;
+		}
+	}
 }

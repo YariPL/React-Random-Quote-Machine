@@ -16,6 +16,23 @@ body {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 350px;
-  background: wheat; }
+  background: wheat;
+  display: flex;
+  flex-direction: column; }
+  #quote-box #quotePart {
+    display: flex;
+    background: blue; }
+  #quote-box #buttons {
+    display: flex; }
+    #quote-box #buttons #tweet-quote {
+      background: red;
+      padding: 15px;
+      color: white;
+      width: fit-content; }
+    #quote-box #buttons #new-quote {
+      background: red;
+      padding: 15px;
+      color: white;
+      width: fit-content; }
 
 /*# sourceMappingURL=index.css.map */

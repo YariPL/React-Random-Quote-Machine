@@ -5,7 +5,7 @@ import './index.css';
 class Quote extends React.Component {
 	render() {
 		return(
-			<div>
+			<div id='quotePart'>
 
 			</div>
 		)
