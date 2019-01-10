@@ -81,9 +81,9 @@ class QuoteBox extends React.Component {
 					currentAuthor={this.state.currentAuthor}
 				/>
 				<div id='buttons'>
-					<div id="tweet-quote">
+					<a id="tweet-quote">
 						<div className='button'>Tweet</div>
-					</div>
+					</a>
 					<div id="new-quote" onClick={this.randomQuote}>
 						<div className='button'>New Quote</div>
 					</div>
