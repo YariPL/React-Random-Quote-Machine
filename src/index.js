@@ -10,10 +10,10 @@ class Quote extends React.Component {
 		return(
 			<div id='quotePart'>
 				<div id="text">
-					{this.props.currentQuote}
+					<p>{this.props.currentQuote}</p>
 				</div>
 				<div id="author">
-					{this.props.currentAuthor}
+					<p>-{this.props.currentAuthor}</p>
 				</div>
 			</div>
 		)
@@ -27,36 +27,36 @@ class QuoteBox extends React.Component {
 			currentQuote:null,
 			currentAuthor:null,
 			quoteData:[{
-				author:'1ss',
-				quote:'1xxxxxxxxxxx'				
+				author:'Andrew Carnegie',
+				quote:'Think of yourself as on the threshold of unparalleled success. A whole, clear, glorious life lies before you. Achieve! Achieve!'
 			},
 			{
-				author:'2ss',
-				quote:'2xxxxxxxxxxx'	
+				author:'Dale Carnegie',
+				quote:'Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.'	
 			},
 			{
-				author:'3ss',
-				quote:'3xxxxxxxxxxx'	
+				author:'Napoleon Bonaparte',
+				quote:'Impossible is a word to be found only in the dictionary of fools.'	
 			},
 			{
-				author:'4ss',
-				quote:'4xxxxxxxxxxx'	
+				author:'Julius Caesar',
+				quote:'What we wish, we readily believe, and what we ourselves think, we imagine others think also.'	
 			},
 			{
-				author:'5ss',
-				quote:'5xxxxxxxxxxx'	
+				author:'Steve Jobs',
+				quote:`Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.`	
 			},
 			{
-				author:'6ss',
-				quote:'6xxxxxxxxxxx'	
+				author:'Bill Gates',
+				quote:`If you can't make it good, at least make it look good.`
 			},
 			{
-				author:'7ss',
-				quote:'7xxxxxxxxxxx'	
+				author:'Sun Tzu',
+				quote:'Know your enemy and know yourself and you can fight a hundred battles without disaster.'	
 			},
 			{
-				author:'8ss',
-				quote:'8xxxxxxxxxxx'	
+				author:'Edward Snowden',
+				quote:'Under observation, we act less free, which means we effectively are less free.'	
 			}]
 			
 		}
