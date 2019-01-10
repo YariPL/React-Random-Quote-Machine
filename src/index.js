@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 class Quote extends React.Component {
+	
+	
+	
+	render() {
+		return(
+			<div id='quotePart'>
+				<div id="text">
+				</div>
+				<div id="author">
+				</div>
+			</div>
+		)
+	}
+}
+
+class QuoteBox extends React.Component {
 	constructor() {
 		super();
 		this.state = {
@@ -27,33 +43,29 @@ class Quote extends React.Component {
 			
 		}
 	}
-	
 	randomQuote() {
-		
-	}
-	render() {
-		return(
-			<div id='quotePart'>
-				<div id="text">
-				</div>
-				<div id="author">
-				</div>
-			</div>
-		)
-	}
-}
+		let randomQuoteIndex = Math.floor(Math.random() * 4);
 
-class QuoteBox extends React.Component {
-	
+		console.log(randomQuoteIndex);
+		console.log(this.state.quoteData[randomQuoteIndex].quote);
+		console.log(this.state.quoteData[randomQuoteIndex].author);
+		/*this.setState({
+			currentQuote:this.state.quoteData[randomQuoteIndex].quote,
+			currentAuthor:this.state.quoteData[randomQuoteIndex].author
+		})*/
+	}
 	render() {
 		return(
 			<div id="quote-box">
-				<Quote />
+				<Quote 
+					currentQuote={this.state.currentQuote}
+					currentAuthor={this.state.currentAuthor}
+				/>
 				<div id='buttons'>
 					<div id="tweet-quote">
 						<div className='button'>Tweet</div>
 					</div>
-					<div id="new-quote">
+					<div id="new-quote" onClick={this.randomQuote}>
 						<div className='button'>New Quote</div>
 					</div>
 				</div>
