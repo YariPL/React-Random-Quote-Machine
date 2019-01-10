@@ -3,7 +3,34 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 class Quote extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			currentQuote:null,
+			currentAuthor:null,
+			quoteData:[{
+				author:'1ss',
+				quote:'1xxxxxxxxxxx'				
+			},
+			{
+				author:'2ss',
+				quote:'2xxxxxxxxxxx'	
+			},
+			{
+				author:'3ss',
+				quote:'3xxxxxxxxxxx'	
+			},
+			{
+				author:'4ss',
+				quote:'4xxxxxxxxxxx'	
+			}]
+			
+		}
+	}
 	
+	randomQuote() {
+		
+	}
 	render() {
 		return(
 			<div id='quotePart'>
@@ -17,19 +44,17 @@ class Quote extends React.Component {
 }
 
 class QuoteBox extends React.Component {
-	constructor() {
-		super();
-	}
+	
 	render() {
 		return(
 			<div id="quote-box">
 				<Quote />
 				<div id='buttons'>
 					<div id="tweet-quote">
-						<div class='button'>Tweet</div>
+						<div className='button'>Tweet</div>
 					</div>
 					<div id="new-quote">
-						<div class='button'>New Quote</div>
+						<div className='button'>New Quote</div>
 					</div>
 				</div>
 			</div>
