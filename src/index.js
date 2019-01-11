@@ -57,7 +57,8 @@ class QuoteBox extends React.Component {
 			{
 				author:'Edward Snowden',
 				quote:'Under observation, we act less free, which means we effectively are less free.'	
-			}]
+			}],
+			backgroundColors: ['blue','red','green','pink','olive', 'cyan', 'wheat','navy']
 			
 		}
 		this.randomQuote = this.randomQuote.bind(this);
@@ -72,6 +73,7 @@ class QuoteBox extends React.Component {
 			currentQuote:this.state.quoteData[randomQuoteIndex].quote,
 			currentAuthor:this.state.quoteData[randomQuoteIndex].author
 		})
+		document.querySelector('body').style.background = this.state.backgroundColors[Math.floor(Math.random() * 8)];
 	}
 	render() {
 		return(
@@ -84,8 +86,8 @@ class QuoteBox extends React.Component {
 					<a id="tweet-quote">
 						<div className='button'>Tweet</div>
 					</a>
-					<div id="new-quote" onClick={this.randomQuote}>
-						<div className='button'>New Quote</div>
+					<div id="new-quote">
+						<div className='button' onClick={this.randomQuote}>New Quote</div>
 					</div>
 				</div>
 			</div>
