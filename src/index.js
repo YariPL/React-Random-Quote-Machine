@@ -24,8 +24,8 @@ class QuoteBox extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			currentQuote:null,
-			currentAuthor:null,
+			currentQuote:'Think of yourself as on the threshold of unparalleled success. A whole, clear, glorious life lies before you. Achieve! Achieve!',
+			currentAuthor:'Andrew Carnegie',
 			quoteData:[{
 				author:'Andrew Carnegie',
 				quote:'Think of yourself as on the threshold of unparalleled success. A whole, clear, glorious life lies before you. Achieve! Achieve!'
@@ -58,7 +58,9 @@ class QuoteBox extends React.Component {
 				author:'Edward Snowden',
 				quote:'Under observation, we act less free, which means we effectively are less free.'	
 			}],
-			backgroundColors: ['blue','red','green','pink','olive', 'cyan', 'wheat','navy']
+			backgroundColors: ['cadetblue','darkgray','green','beige','olive', 'rosybrown', 'wheat','coral'],
+			quotBackgroundColors: ['pink', 'cyan', 'wheat','antiquewhite'],
+			buttonBackgroundColors: ['rosybrown','chocolate','darkmagenta','navy']
 			
 		}
 		this.randomQuote = this.randomQuote.bind(this);
@@ -71,6 +73,10 @@ class QuoteBox extends React.Component {
 			currentAuthor:this.state.quoteData[randomQuoteIndex].author
 		})
 		document.querySelector('body').style.background = this.state.backgroundColors[Math.floor(Math.random() * 8)];
+		document.querySelector('#quote-box').style.background = this.state.quotBackgroundColors[Math.floor(Math.random() * 4)];
+		document.querySelector('#tweet-quote').style.background = this.state.buttonBackgroundColors[Math.floor(Math.random() * 4)];
+		document.querySelector('#new-quote').style.background = this.state.buttonBackgroundColors[Math.floor(Math.random() * 4)];
+
 	}
 	render() {
 		return(

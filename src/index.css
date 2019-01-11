@@ -16,17 +16,17 @@ body {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 350px;
-  background: wheat;
+  background: coral;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 2px solid darkolivegreen;
+  border-radius: 14px; }
   #quote-box #quotePart {
     display: flex;
     flex-direction: column;
-    background: blue;
     height: 70%; }
     #quote-box #quotePart #text {
       height: 70%;
-      background: olive;
       position: relative;
       text-align: center;
       padding-top: 30%; }
@@ -50,23 +50,23 @@ body {
     height: 30%; }
     #quote-box #buttons #tweet-quoteDiv {
       position: relative;
-      background: green;
       color: white;
       width: 50%; }
     #quote-box #buttons #new-quoteDiv {
       position: relative;
-      background: olive;
       color: white;
       width: 50%; }
 
 .button {
-  background: black;
+  background: midnightblue;
   width: fit-content;
   padding: 10px;
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 10%);
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */
