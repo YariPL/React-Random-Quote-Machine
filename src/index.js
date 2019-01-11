@@ -66,9 +66,6 @@ class QuoteBox extends React.Component {
 	randomQuote() {
 		let randomQuoteIndex = Math.floor(Math.random() * 8);
 
-		console.log(randomQuoteIndex);
-		console.log(this.state.quoteData[randomQuoteIndex].quote);
-		console.log(this.state.quoteData[randomQuoteIndex].author);
 		this.setState({
 			currentQuote:this.state.quoteData[randomQuoteIndex].quote,
 			currentAuthor:this.state.quoteData[randomQuoteIndex].author
@@ -83,11 +80,11 @@ class QuoteBox extends React.Component {
 					currentAuthor={this.state.currentAuthor}
 				/>
 				<div id='buttons'>
-					<a id="tweet-quote">
-						<div className='button'>Tweet</div>
-					</a>
-					<div id="new-quote">
-						<div className='button' onClick={this.randomQuote}>New Quote</div>
+					<div id="tweet-quoteDiv">
+						<a id="tweet-quote"  href="twitter.com/intent/tweet" className='button'>Tweet</a>
+					</div>
+					<div id="new-quoteDiv">
+						<div id="new-quote" className='button' onClick={this.randomQuote}>New Quote</div>
 					</div>
 				</div>
 			</div>

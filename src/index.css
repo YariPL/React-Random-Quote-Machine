@@ -48,12 +48,12 @@ body {
   #quote-box #buttons {
     display: flex;
     height: 30%; }
-    #quote-box #buttons #tweet-quote {
+    #quote-box #buttons #tweet-quoteDiv {
       position: relative;
       background: green;
       color: white;
       width: 50%; }
-    #quote-box #buttons #new-quote {
+    #quote-box #buttons #new-quoteDiv {
       position: relative;
       background: olive;
       color: white;
