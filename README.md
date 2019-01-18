@@ -8,5 +8,5 @@
 
 # Technologies:
 <p> For this project I used:<p>
-* React.js for functionality
-* SCSS for styling
+- React.js for functionality
+- SCSS for styling
