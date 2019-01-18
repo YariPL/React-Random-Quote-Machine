@@ -1,5 +1,5 @@
 # <center>React Random Quote Machine</center>
-<p> Project is a part of <a href='https://freecodecamp.com'>FREECODECAMP</a> curriculum.</p>
+⋅⋅⋅Project is a part of FREECODECAMP curriculum.
 
 # How it works:
 ⋅⋅⋅There is a quote box in the center of the screen, which has two buttons, **Tweet** and **New Quote**.
